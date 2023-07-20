@@ -12,6 +12,7 @@ import android.view.MenuItem;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.Button;
 
 
 import androidx.appcompat.widget.Toolbar;
@@ -33,11 +34,16 @@ public class MenuPrincipal extends AppCompatActivity {
     FragmentManager fragmentManager;
     FragmentTransaction fragmentTransaction;
 
+    Button button;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_principal);
+
+        button = findViewById(R.id.buttonver);
+
 
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);

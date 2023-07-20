@@ -23,9 +23,6 @@
             android:name=".regristro"
             android:exported="false" />
         <activity
-            android:name=".crearProyecto"
-            android:exported="false" />
-        <activity
             android:name=".DetalleProyecto"
             android:exported="false" />
         <activity

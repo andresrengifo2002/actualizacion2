@@ -14,7 +14,8 @@ import com.bumptech.glide.Glide;
 
 import java.util.ArrayList;
 
-public class ListaListadoProyectosAdapter extends RecyclerView.Adapter<ListaListadoProyectosAdapter.ViewHolder> {
+public class
+ListaListadoProyectosAdapter extends RecyclerView.Adapter<ListaListadoProyectosAdapter.ViewHolder> {
     private RecyclerView recyclerView;
     private  Listadoproyectos listadoproyectos;
     private ArrayList<Listadoproyectos> dataset;
@@ -33,11 +34,11 @@ public class ListaListadoProyectosAdapter extends RecyclerView.Adapter<ListaList
             super(itemView);
             title=itemView.findViewById(R.id.title);
             image=itemView.findViewById(R.id.image);
-            descripcionProyecto=itemView.findViewById(R.id.descripcionProyecto);
+            /*  descripcionProyecto=itemView.findViewById(R.id.descripcionProyecto);
             codigofuente=itemView.findViewById(R.id.codigofuente);
             aprendiz=itemView.findViewById(R.id.aprendiz);
             estado=itemView.findViewById(R.id.estado);
-
+*/
         }
 
     }
@@ -57,10 +58,10 @@ public class ListaListadoProyectosAdapter extends RecyclerView.Adapter<ListaList
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Listadoproyectos p=dataset.get(position);
         holder.title.setText(p.getNombre_proyecto());
-        holder.descripcionProyecto.setText(p.getDescripcion());
+       /* holder.descripcionProyecto.setText(p.getDescripcion());
         holder.codigofuente.setText((p.getCodigo_fuente()));
         holder.aprendiz.setText(Integer.toString(p.getAprendiz()));
-        holder.estado.setText(p.getEstado());
+        holder.estado.setText(p.getEstado());*/
 
         String url ="";
 

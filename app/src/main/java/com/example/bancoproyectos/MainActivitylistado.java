@@ -15,6 +15,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ImageView;
 
 import com.example.bancoproyectos.api.ProyectosApiService;
@@ -116,6 +117,10 @@ public class MainActivitylistado extends AppCompatActivity {
         FragmentTransaction fragmentTransaction = frgManager.beginTransaction();
         fragmentTransaction.replace(R.id.fragmenPadre, fragment);
         fragmentTransaction.commit();
+    }
+    public void onClick(View v) {
+        Intent I = new Intent(MainActivitylistado.this, DetalleProyecto.class);
+        startActivity(I);
     }
 
     public void enviarProyecto(Listadoproyectos listadoproyectos) {
